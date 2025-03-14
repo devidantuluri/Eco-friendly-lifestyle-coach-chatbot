@@ -1,0 +1,96 @@
+/* Full page styling with a light green background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4edda; /* Light green background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+header {
+    background-color: #28a745; /* Dark green background for the header */
+    color: white; /* White text color */
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take up remaining space */
+    max-width: 100vw; /* Full viewport width */
+    max-height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+.chat-box {
+    flex: 1; /* Grow to take up available space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9; /* Light grey background for the chat area */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%; /* Max width for the messages */
+    line-height: 1.4;
+    word-wrap: break-word; /* Allow long words to wrap */
+    display: inline-block;
+}
+
+.chat-message.user {
+    background-color: #76c7c0; /* Vibrant teal for user messages */
+    align-self: flex-end; /* Align user messages to the right */
+    text-align: right;
+    margin-left: auto; /* Push user messages to the right end */
+}
+
+.chat-message.bot {
+    background-color: #28a745; /* Green for bot messages */
+    color: white; /* White text color */
+    align-self: flex-start; /* Align bot messages to the left */
+    text-align: left;
+    margin-right: auto; /* Push bot messages to the left end */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff; /* White background for the input area */
+    border-top: 1px solid #ddd;
+}
+
+input[type="text"] {
+    width:80%;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width:15%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
